@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- default -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuê Trọ Online</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- responsive nav -->
+        <!-- header -->
+        <header class="flex">
+            <div class="brand" style="margin-right: 2em;">
+                <div class="brand-content"
+                    style="display: flex;justify-content: center;align-items: center;height: 100%;">
+                    <h2>BRAND</h2>
+                </div>
+            </div>
+            <!-- navbar -->
+            <div id="nav-container" onclick="closeNav(event)">
+                <div class="flex topnav nav">
+                    <a id="close" onclick="closeNav(event)"><i class="fas fa-times"></i></a>
+                    <a class=" nav-item resonsive-nav" href="index.html">Trang Chủ</a>
+                    <!-- dropdown -->
+                    <div class="nav-item resonsive-nav dropdown">
+                        <a class="" href="#">Thuê Trọ
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class=" dropdown-items">
+                            <li class=""><a href="#">Thuê trọ đơn</a></li>
+                            <li class=""><a href="#">Thuê trọ chung</a></li>
+                            <li class=""><a href="#">Tìm người ở ghép</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-item" href="#list">Danh sách</a>
+                    <a class="nav-item" href="#blog">Blog</a>
+
+                    <a class="nav-item" href="#">Đăng tin mới</a>
+                </div>
+            </div>
+            <div style="width:50%;text-align: left;margin: auto;">
+                <a class="icon" id="side-nav" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!-- login button -->
+            <div class="flex login" style=" justify-content: flex-end;align-items: center;">
+                <div class="login-content ">
+                    <button class="highlight" onclick="redirect('login.html')">Đăng nhập</button>
+                    <button onclick="redirect('join.html')">Đăng ký</button>
+                </div>
+            </div>
+        </header>
+        <div class="cover"></div>
+        <!-- search -->
+        <div class="search-area">
+
+            <h1 class="heading">Tìm Nhà Trọ Phù Hợp Với Bạn</h1>
+            <div class="searchbar">
+                <input type="text" name="" id="" placeholder="Tìm Tên Nhà Trọ" />
+                <select name="" id="">
+                    <option value="" disabled selected>Chọn mệnh giá</option>
+                    <option value="">Dưới 1.000.000đ</option>
+                    <option value="">1.000.000đ - 2.000.000đ</option>
+                    <option value="">2.000.000đ - 5.000.000đ</option>
+                    <option value="">Trên 5.000.000đ</option>
+                </select>
+                <select name="" id="">
+                    <option value="" disabled selected>Chọn tỉnh thành</option>
+                    <option value="">Đà Nẵng</option>
+                    <option value="">Thừa Thiên Huế</option>
+                    <option value="">Quảng Nam</option>
+                    <option value="">Nghệ An</option>
+                </select>
+                <button>Tìm Kiếm</button>
+            </div>
+        </div>
+        <!-- best -->
+        <div class="best-seller">
+            <h1 class="heading">Nhà Trọ Tốt Nhất Trong Khu Vực</h1>
+            <select name="" id="">
+                <option value="" disabled selected>Chọn tỉnh thành</option>
+                <option value="">Đà Nẵng</option>
+                <option value="">Thừa Thiên Huế</option>
+                <option value="">Quảng Nam</option>
+                <option value="">Nghệ An</option>
+            </select>
+            <div class="slide-container owl-carousel">
+                <div class="card item">
+                    <img src="./img/01b74752214a936446e9fc644d248038.jpg" alt="" />
+                    <h1>HOUSE</h1>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+                            blanditiis molestias necessitatibus aperiam eligendi, unde tempora
+                            repellat atqu
+                        </p>
+                    </div>
+                    <div class="ranking">
+                        <div class="rating">
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p class="price">1.000.000đ</p>
+                    </div>
+                    <button>Thuê</button>
+                </div>
+                <div class="card item">
+                    <img src="./img/kinh-nghiem-tim-phong-tro-gia-re-top-xx-website-t.jpg" alt="" />
+                    <h1>HOUSE</h1>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum dolor, sit amet iis molestias necessitatibus aperiam
+                            eligendi, unde tempora repellat atque ullam adipisci
+                        </p>
+                    </div>
+                    <div class="ranking">
+                        <div class="rating">
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p class="price">1.000.000đ</p>
+                    </div>
+                    <button>Thuê</button>
+                </div>
+                <div class="card item">
+                    <img src="./img/phong-tro-2.jpg" alt="" />
+                    <h1>HOUSE</h1>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+                            blanditiis molestias necessitatibus aperiam eligendi, unde tempora
+                            repellat atque ullam adipisci
+                        </p>
+                    </div>
+                    <div class="ranking">
+                        <div class="rating">
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p class="price">1.000.000đ</p>
+                    </div>
+                    <button>Thuê</button>
+                </div>
+                <div class="card item">
+                    <img src="./img/tim-phong-tro-quan-4-bang-nhung-meo-bo-ich-cho-sinh-vien-nguoi-di-lam.jpg" alt="" />
+                    <h1>HOUSE</h1>
+                    <div class="card-text">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+                            blanditiis molestias necessitatibus aperiam eligendi, unde tempora
+                            repellat atque ullam adipisci
+                        </p>
+                    </div>
+                    <div class="ranking">
+                        <div class="rating">
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p class="price">1.000.000đ</p>
+                    </div>
+                    <button>Thuê</button>
+                </div>
+            </div>
+        </div>
+        <!-- list -->
+        <div class="list" id="list">
+            <div class="heading flex" style="justify-content: center;">
+                <h1>Danh sách nhà trọ</h1>
+            </div>
+            <div class="grid-container">
+                <div class="list-card">
+                    <div class="card-content flex">
+                        <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        <div class="card-info">
+                            <h1>HOUSE</h1>
+                            <div class="ranking">
+                                <div class="rating">
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p class="price">1.000.000đ</p>
+                            </div>
+                            <address>123abc-xyz</address>
+                        </div>
+                        <div class="list-btn">
+                            <button>Thuê</button>
+                            <button>Thông Tin</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-content flex">
+                        <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        <div class="card-info">
+                            <h1>HOUSE</h1>
+                            <div class="ranking">
+                                <div class="rating">
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p class="price">1.000.000đ</p>
+                            </div>
+                            <address>123abc-xyz</address>
+                        </div>
+                        <div class="list-btn">
+                            <button>Thuê</button>
+                            <button>Thông Tin</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-content flex">
+                        <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        <div class="card-info">
+                            <h1>HOUSE</h1>
+                            <div class="ranking">
+                                <div class="rating">
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p class="price">1.000.000đ</p>
+                            </div>
+                            <address>123abc-xyz</address>
+                        </div>
+                        <div class="list-btn">
+                            <button>Thuê</button>
+                            <button>Thông Tin</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-content flex">
+                        <img src="./img/tim-phong-tro-quan-4-bang-nhung-meo-bo-ich-cho-sinh-vien-nguoi-di-lam.jpg"
+                            alt="">
+                        <div class="card-info">
+                            <h1>HOUSE</h1>
+                            <div class="ranking">
+                                <div class="rating">
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p class="price">1.000.000đ</p>
+                            </div>
+                            <address>123abc-xyz</address>
+                        </div>
+                        <div class="list-btn">
+                            <button>Thuê</button>
+                            <button>Thông Tin</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <div class="card-content flex">
+                        <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        <div class="card-info">
+                            <h1>HOUSE</h1>
+                            <div class="ranking">
+                                <div class="rating">
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p class="price">1.000.000đ</p>
+                            </div>
+                            <address>123abc-xyz</address>
+                        </div>
+                        <div class="list-btn">
+                            <button>Thuê</button>
+                            <button>Thông Tin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-number flex">
+                <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                <a href="#" class="choose">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <!-- blog begin in here -->
+        <div class="blog-area" id="blog">
+            <h1>Blog</h1>
+            <div class="blog-content">
+                <a href="#" class="post" style="display: none;">
+                    <figure>
+                        <img src="./img/blog-1.jpg" alt="">
+                    </figure>
+                    <div class="post-content">
+                        <h4>Tin tức thị trường cho thuê nhà đất trong thời đại dịch Covid-19</h4>
+                        <p>Đại dịch Covid-19 kéo dài, ảnh hưởng rất tiêu cực và có thể nói là gây “khủng hoảng” lớn đến
+                            thị trường bất động sản cho thuê tại Việt Nam</p>
+                    </div>
+                </a>
+                <a href="#" class="post" style="display: none;">
+                    <figure>
+                        <img src="./img/blog-2.jpg" alt="">
+                    </figure>
+                    <div class="post-content">
+                        <h4>6 tiêu chí đánh giá phòng trọ tốt mà người thuê trọ nên tham khảo</h4>
+                        <p>Tùy theo nhu cầu thuê trọ của mỗi người, để đánh giá được một phòng trọ có chất lượng tốt hay
+                            không thì phải dựa trên nhiều tiêu chí khác nhau.</p>
+                    </div>
+                </a>
+                <a href="#" class="post" style="display: none;">
+                    <figure>
+                        <img src="./img/blog-3.jpg" alt="">
+                    </figure>
+                    <div class="post-content">
+                        <h4>Danh sách 9 vật dụng cần thiết khi ở trọ tân sinh viên nên chuẩn bị</h4>
+                        <p>Tân sinh viên khi ở trọ thì nên chuẩn bị trước những vật dụng gì để không bỡ ngỡ với cuộc
+                            sống xa nhà? Cùng với đó là các câu hỏi khác, xoay...</p>
+                    </div>
+                </a>
+                <a href="#" class="post" style="display: none;">
+                    <figure>
+                        <img src="./img/blog-4.jpg" alt="">
+                    </figure>
+                    <div class="post-content">
+                        <h4>Nên hay không sinh viên chọn thuê căn hộ thay vì nhà trọ</h4>
+                        <p>Hiện nay nhu cầu tìm thuê chỗ ở tại các thành phố là vô cùng lớn, rất nhiều căn hộ, phòng trọ
+                            được xây dựng, yêu cầu về chỗ ở đang ngày càng tăng lên</p>
+                    </div>
+                </a>
+                <a id="loadMore" href="javascript:void(0)">xem thêm</a>
+            </div>
+        </div>
+        <!-- contact -->
+        <div class="box-contact">
+            <h1>Liên Hệ Và Nhận Xét</h1>
+            <div class="contact-content grid-container">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15342.933148791337!2d108.25145036484606!3d15.97529878218279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1620109399065!5m2!1svi!2s"
+                    width="40%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="contact-form">
+                    <label for="name">
+                        <h2>Tên</h2>
+                    </label>
+                    <input type="text" placeholder="Nhập tên">
+                    <label for="email">
+                        <h2>Email</h2>
+                    </label>
+                    <input type="text" placeholder="Nhập email">
+                    <label for="name">
+                        <h2>Nội Dung Nhận Xét</h2>
+                    </label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Viết nhận xét"></textarea>
+                    <button>Gửi</button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer ">
+            <div class="footer-info">
+                <h2 style="display: inline-block">BRAND</h2>
+                <p>Quote</p>
+            </div>
+            <div class="about">
+                <h2>Liên Kết Nhanh</h2>
+                <ul class="">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Thuê trọ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Danh sách</a></li>
+                    <li><a href="#">Đăng tin</a></li>
+                </ul>
+            </div>
+            <div class="support">
+                <h2>Hỗ trợ khách hàng</h2>
+                <ul class="">
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Hướng dẫn đăng tin</a></li>
+                    <li><a href="#">Quy định đăng tin</a></li>
+                    <li><a href="#">Quy định sử dụng</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Liên hệ với chúng tôi</h2>
+                <ul class=" flex">
+                    <li><a href="# "><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Script -->
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/jquery.min.js"></script>
+    <script src="JS/owlCarousel.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

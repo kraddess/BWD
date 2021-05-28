@@ -1,0 +1,87 @@
+.body{
+    height: 100vh;
+}
+.background{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+}
+header{
+    z-index: 3;
+}
+.login-form,.join-form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f0f7ff;   
+    width: 600px;
+    border-radius: 2em;
+    overflow: hidden;
+    z-index: 2;
+}
+@media screen and (max-width:700px) {
+    .login-form,.join-form{
+        width: 350px;
+    }
+}
+.login-form input,.join-form input{
+    width: auto;
+    margin: 0;
+}
+.log{
+    padding: 1em;
+    flex-direction: column;
+    border-bottom: 1px solid #757575;
+    
+}
+.join{
+    padding: 1em;
+    flex-direction: column;
+}
+.log *,.join *{
+    margin: 5px 0;
+    float: left;
+}
+.log input,.join input{
+    width: auto;
+    height: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #205be3;
+}
+.log input:focus,.join input:focus{
+    outline: none;
+}
+.log h2,.join h2{
+    text-align: center;
+}
+.log button,.join button{
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    transition: .2s;
+    margin-top:40px;
+}
+.log button:hover,.join button:hover{
+    background-color: #205be3;
+    color: white;
+}
+.sub-log a{
+    color: var(--primary);
+}
+.sub-log{
+    width: auto;
+    padding: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sub-log a:hover{
+    border-bottom: 1px solid #205be3;
+}
+.box-contact{
+    position: relative;
+    z-index: 2;
+}

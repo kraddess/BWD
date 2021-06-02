@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <!-- default -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuê Trọ Online</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="flex">
+        <div class="brand" style="margin-right: 2em;">
+            <div class="brand-content" style="display: flex;justify-content: center;align-items: center;height: 100%;">
+                <h2>BRAND</h2>
+            </div>
+        </div>
+        <!-- navbar -->
+        <div id="nav-container" onclick="closeNav(event)">
+            <div class="flex topnav nav">
+                <a id="close" onclick="closeNav(event)"><i class="fas fa-times"></i></a>
+                <a class=" nav-item resonsive-nav" href="index.html">Trang Chủ</a>
+                <!-- dropdown -->
+                <div class="nav-item resonsive-nav dropdown">
+                    <a class="" href="#">Thuê Trọ
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class=" dropdown-items">
+                        <li class=""><a href="#">Thuê trọ đơn</a></li>
+                        <li class=""><a href="#">Thuê trọ chung</a></li>
+                        <li class=""><a href="#">Tìm người ở ghép</a></li>
+                    </ul>
+                </div>
+                <a class="nav-item" href="#list">Danh sách</a>
+                <a class="nav-item" href="#blog">Blog</a>
+
+                <a class="nav-item" href="./post.html">Đăng tin mới</a>
+            </div>
+        </div>
+        <div style="width:50%;text-align: left;margin: auto;">
+            <a class="icon" id="side-nav" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- login button -->
+        <div class="flex login" style=" justify-content: flex-end;align-items: center;">
+            <div class="login-content ">
+                <button class="highlight" onclick="redirect('login.html')">Đăng nhập</button>
+                <button onclick="redirect('join.html')">Đăng ký</button>
+            </div>
+        </div>
+    </header>
+    <div class="news-body">
+        <section class="news-content">
+            <h2>Đăng Tin Mới</h2>
+            <label for="address">Địa chỉ nhà trọ </label><br>
+            <input type="text" name="address" id=""><br>
+            <label for="type">Loại Phòng</label><br>
+            <select name="type" id="">
+                <option value="" disabled selected>Chọn loại</option>
+                <option value="">Trọ một người</option>
+                <option value="">Trọ nhiều người</option>
+                <option value="">Tìm người ở ghép</option>
+                <option value="">Nhà thuê nguyên căn</option>
+            </select><br>
+            <label for="title">Tiêu đề</label><br>
+            <input type="text"><br>
+            <label for="content">Mô tả</label><br>
+            <textarea name="content" id="" cols="30" rows="10"
+                placeholder="Nội dung không quá 100 kí tự"></textarea><br>
+            <label for="contact">Thông tin liên hệ </label><br>
+            <input type="text" placeholder="SĐT"><br>
+            <label for="price">Giá cho thuê</label><br>
+            <input type="text" placeholder="VD: 1000000(VND)"><br>
+            <label for="area">Diện tích</label><br>
+            <input type="text" name="area" placeholder="VD: 100(m2)"> <br>
+            <label for="">Đối tượng cho thuê</label><br>
+            <label for="male">Nam</label>
+            <input type="radio" name="male" id="">
+            <label for="male">Nữ</label>
+            <input type="radio" name="female" id=""><br>
+            <label for="img">Hình ảnh</label>
+            <form action="/upload-target" class="dropzone" id="drop">
+                <div class="dz-message needsclick">
+                    <i class="fas fa-images"></i>
+                  </div>
+                </form>
+            <input type="button" value="Hoàn tất">
+
+        </section>
+    </div>
+    <!-- Script -->
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/jquery.min.js"></script>
+    <script src="JS/owlCarousel.min.js"></script>
+    <script src="./JS/dropzone-5.7.0/dist/min/dropzone.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

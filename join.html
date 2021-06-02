@@ -51,9 +51,10 @@
                             <li class=""><a href="#">Tìm người ở ghép</a></li>
                         </ul>
                     </div>
-                    <a class="nav-item" href="#">Blog</a>
                     <a class="nav-item" href="#list">Danh sách</a>
-                    <a class="nav-item" href="#">Đăng tin mới</a>
+                    <a class="nav-item" href="#blog">Blog</a>
+
+                    <a class="nav-item" href="./post.html" >Đăng tin mới</a>
                 </div>
             </div>
             <div style="width:50%;text-align: left;margin: auto;">
@@ -64,13 +65,13 @@
             <!-- login button -->
             <div class="flex login" style=" justify-content: flex-end;align-items: center;">
                 <div class="login-content ">
-                    <button onclick="redirect('login.html')" class="highlight">Đăng nhập</button>
+                    <button class="highlight" onclick="redirect('login.html')">Đăng nhập</button>
                     <button onclick="redirect('join.html')">Đăng ký</button>
                 </div>
             </div>
         </header>
         <div class="body">
-            <div class="background">
+            <div class="background" id="join-background">
             </div>
             <div class="join-form">
                 <form action="">

@@ -3,6 +3,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
+    dot:true,
     autoplay: false,
     autoplayTimeout:5000,
     navText: [
@@ -13,10 +14,10 @@ $('.owl-carousel').owlCarousel({
       0: {
         items: 1
       },
-      600: {
+      800: {
         items: 2
       },
-      1000: {
+      1024: {
         items: 3
       },
       2000:{
@@ -54,10 +55,5 @@ $('.owl-carousel').owlCarousel({
         
     });
 });
- 
-$('a[href=#top]').click(function () {
-    $('body,html').animate({
-        scrollTop: 0
-    }, 600);
-    return false;
-});
+
+//  

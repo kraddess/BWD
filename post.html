@@ -16,8 +16,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css" />
+
     <!-- default -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,44 +69,25 @@
             </div>
         </div>
     </header>
-    <div class="news-body">
-        <section class="news-content">
-            <h2>Đăng Tin Mới</h2>
-            <label for="address">Địa chỉ nhà trọ </label><br>
-            <input type="text" name="address" id=""><br>
-            <label for="type">Loại Phòng</label><br>
-            <select name="type" id="">
-                <option value="" disabled selected>Chọn loại</option>
-                <option value="">Trọ một người</option>
-                <option value="">Trọ nhiều người</option>
-                <option value="">Tìm người ở ghép</option>
-                <option value="">Nhà thuê nguyên căn</option>
-            </select><br>
-            <label for="title">Tiêu đề</label><br>
-            <input type="text"><br>
-            <label for="content">Mô tả</label><br>
-            <textarea name="content" id="" cols="30" rows="10"
-                placeholder="Nội dung không quá 100 kí tự"></textarea><br>
-            <label for="contact">Thông tin liên hệ </label><br>
-            <input type="text" placeholder="SĐT"><br>
-            <label for="price">Giá cho thuê</label><br>
-            <input type="text" placeholder="VD: 1000000(VND)"><br>
-            <label for="area">Diện tích</label><br>
-            <input type="text" name="area" placeholder="VD: 100(m2)"> <br>
-            <label for="">Đối tượng cho thuê</label><br>
-            <label for="male">Nam</label>
-            <input type="radio" name="male" id="">
-            <label for="male">Nữ</label>
-            <input type="radio" name="female" id=""><br>
-            <label for="img">Hình ảnh</label>
-            <form action="/upload-target" class="dropzone" id="drop">
-                <div class="dz-message needsclick">
-                    <i class="fas fa-images"></i>
-                  </div>
-                </form>
-            <input type="button" value="Hoàn tất">
 
-        </section>
+
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2 class="post-title">Đăng tin ngay</h2>
+                <input type="text" class="field" placeholder="Họ tên">
+                <input type="text" class="field" placeholder="Địa chỉ Email">
+                <input type="text" class="field" placeholder="Số điện thoại">
+                <input type="text" class="field" placeholder="Địa chỉ cho thuê">
+                <input type="text" class="field" placeholder="Tiêu đề">
+                <input type="text" class="field" placeholder="Giá cho thuê">
+                <input type="text" class="field" placeholder="Diện tích">
+                <input type="text" class="field" placeholder="Đối tượng cho thuê">
+                <textarea placeholder="Mô tả" class="field"></textarea>
+                <button class="btn">Gửi đi</button>
+            </div>
+        </div>
     </div>
     <!-- Script -->
     <script src="./JS/popper.min.js"></script>

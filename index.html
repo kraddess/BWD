@@ -16,7 +16,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- default -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -54,10 +54,10 @@
                     <a class="nav-item" href="#list">Danh sách</a>
                     <a class="nav-item" href="#blog">Blog</a>
 
-                    <a class="nav-item" href="./post.html" >Đăng tin mới</a>
+                    <a class="nav-item" href="./post.html">Đăng tin mới</a>
                 </div>
             </div>
-            <div style="width:50%;text-align: left;margin: auto;">
+            <div class="open-nav">
                 <a class="icon" id="side-nav" onclick="openNav()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -171,6 +171,7 @@
                     <button>Thuê</button>
                 </div>
                 <div class="card item">
+
                     <img src="./img/tim-phong-tro-quan-4-bang-nhung-meo-bo-ich-cho-sinh-vien-nguoi-di-lam.jpg" alt="" />
                     <h1>HOUSE</h1>
                     <div class="card-text">
@@ -195,6 +196,9 @@
             </div>
         </div>
         <!-- list -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#eeeeee" fill-opacity="1" d="M0,224L480,64L960,128L1440,128L1440,0L960,0L480,0L0,0Z"></path>
+        </svg>
         <div class="list" id="list">
             <div class="heading flex" style="justify-content: center;">
                 <h1>Danh sách nhà trọ</h1>
@@ -202,7 +206,10 @@
             <div class="grid-container">
                 <div class="list-card">
                     <div class="card-content flex">
-                        <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        <div class="card-img">
+                            <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        </div>
+
                         <div class="card-info">
                             <h1>HOUSE</h1>
                             <div class="ranking">
@@ -225,7 +232,10 @@
                 </div>
                 <div class="list-card">
                     <div class="card-content flex">
-                        <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        <div class="card-img">
+                            <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        </div>
+
                         <div class="card-info">
                             <h1>HOUSE</h1>
                             <div class="ranking">
@@ -248,7 +258,10 @@
                 </div>
                 <div class="list-card">
                     <div class="card-content flex">
-                        <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        <div class="card-img">
+                            <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        </div>
+
                         <div class="card-info">
                             <h1>HOUSE</h1>
                             <div class="ranking">
@@ -271,8 +284,11 @@
                 </div>
                 <div class="list-card">
                     <div class="card-content flex">
-                        <img src="./img/tim-phong-tro-quan-4-bang-nhung-meo-bo-ich-cho-sinh-vien-nguoi-di-lam.jpg"
-                            alt="">
+                        <div class="card-img">
+                            <img src="./img/tim-phong-tro-quan-4-bang-nhung-meo-bo-ich-cho-sinh-vien-nguoi-di-lam.jpg"
+                                alt="">
+                        </div>
+
                         <div class="card-info">
                             <h1>HOUSE</h1>
                             <div class="ranking">
@@ -295,7 +311,10 @@
                 </div>
                 <div class="list-card">
                     <div class="card-content flex">
-                        <img src="./img/y-tuong-thiet-ke-phong-tro-cuc-sang-tao-1.png" alt="">
+                        <div class="card-img">
+                            <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_500,h_321/https://nhadatankhanh.vn/wp-content/uploads/2021/01/1611132463_156_Nha-san-dep-bang-be-tong-Kien-truc-truyen-500x321.jpg"
+                                alt="">
+                        </div>
                         <div class="card-info">
                             <h1>HOUSE</h1>
                             <div class="ranking">
@@ -316,70 +335,52 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="page-number flex">
-                <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
-                <a href="#" class="choose">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                <div class="list-card">
+                    <div class="card-content flex">
+                        <div class="card-img">
+                            <img src="https://nhagodep.info/wp-content/uploads/2019/03/nha-go-3-gian.jpg" alt="">
+                        </div>
+
+                        <div class="card-info">
+                            <h1>HOUSE</h1>
+                            <div class="ranking">
+                                <div class="rating">
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating-checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p class="price">1.000.000đ</p>
+                            </div>
+                            <address>123abc-xyz</address>
+                        </div>
+                        <div class="list-btn">
+                            <button>Thuê</button>
+                            <button>Thông Tin</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- blog begin in here --><!--
-        <div class="blog-area" id="blog">
-            <h1>Blog</h1>
-            <div class="blog-content">
-                <a href="#" class="post" style="display: none;">
-                    <figure>
-                        <img src="./img/blog-1.jpg" alt="">
-                    </figure>
-                    <div class="post-content">
-                        <h4>Tin tức thị trường cho thuê nhà đất trong thời đại dịch Covid-19</h4>
-                        <p>Đại dịch Covid-19 kéo dài, ảnh hưởng rất tiêu cực và có thể nói là gây “khủng hoảng” lớn đến
-                            thị trường bất động sản cho thuê tại Việt Nam</p>
-                    </div>
-                </a>
-                <a href="#" class="post" style="display: none;">
-                    <figure>
-                        <img src="./img/blog-2.jpg" alt="">
-                    </figure>
-                    <div class="post-content">
-                        <h4>6 tiêu chí đánh giá phòng trọ tốt mà người thuê trọ nên tham khảo</h4>
-                        <p>Tùy theo nhu cầu thuê trọ của mỗi người, để đánh giá được một phòng trọ có chất lượng tốt hay
-                            không thì phải dựa trên nhiều tiêu chí khác nhau.</p>
-                    </div>
-                </a>
-                <a href="#" class="post" style="display: none;">
-                    <figure>
-                        <img src="./img/blog-3.jpg" alt="">
-                    </figure>
-                    <div class="post-content">
-                        <h4>Danh sách 9 vật dụng cần thiết khi ở trọ tân sinh viên nên chuẩn bị</h4>
-                        <p>Tân sinh viên khi ở trọ thì nên chuẩn bị trước những vật dụng gì để không bỡ ngỡ với cuộc
-                            sống xa nhà? Cùng với đó là các câu hỏi khác, xoay...</p>
-                    </div>
-                </a>
-                <a href="#" class="post" style="display: none;">
-                    <figure>
-                        <img src="./img/blog-4.jpg" alt="">
-                    </figure>
-                    <div class="post-content">
-                        <h4>Nên hay không sinh viên chọn thuê căn hộ thay vì nhà trọ</h4>
-                        <p>Hiện nay nhu cầu tìm thuê chỗ ở tại các thành phố là vô cùng lớn, rất nhiều căn hộ, phòng trọ
-                            được xây dựng, yêu cầu về chỗ ở đang ngày càng tăng lên</p>
-                    </div>
-                </a>
-                <a id="loadMore" href="javascript:void(0)">xem thêm</a>
-            </div>
-        </div> -->
-        <div class="blog-section">
+
+        <div class="page-number flex">
+            <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+            <a href="#" class="choose">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    
+    <div class="blog-section">
         <h1>Blog section</h1>
         <div class="post-list">
             <div class="post-item">
                 <a href="#" class="post-media">
-                    <img
-                    src="https://images.unsplash.com/photo-1621390324893-ea412aa9453c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="" class="post-image"/>
+                    <img src="https://kientrucsuvietnam.vn/wp-content/uploads/2021/04/nha-dep-2021-7a.jpg" alt=""
+                        class="post-image" />
                 </a>
                 <a href="#" class="post-category">Shop</a>
                 <h3>
@@ -390,7 +391,7 @@
                 </p>
                 <a href="#" class="post-author">
                     <img src="https://images.unsplash.com/photo-1621423938441-5a7346cb2213?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
-                     alt="" class="post-author-image">
+                        alt="" class="post-author-image">
                     <div class="post-author-info">
                         <h4 class="post-author-name">By Jajaaja</h4>
                         <time class="post-author-time">Just now</time>
@@ -399,8 +400,8 @@
             </div>
             <div class="post-item">
                 <a href="#" class="post-media">
-                    <img
-                    src="https://images.unsplash.com/photo-1621390324893-ea412aa9453c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="" class="post-image"/>
+                    <img src="https://betaviet.com/Uploads/Biet%20thu/2019/KT19301/mau-nha-biet-thu-dep-3-tang-kt19301(1).jpg"
+                        alt="" class="post-image" />
                 </a>
                 <a href="#" class="post-category">Shop</a>
                 <h3>
@@ -411,7 +412,7 @@
                 </p>
                 <a href="#" class="post-author">
                     <img src="https://images.unsplash.com/photo-1621423938441-5a7346cb2213?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
-                     alt="" class="post-author-image">
+                        alt="" class="post-author-image">
                     <div class="post-author-info">
                         <h4 class="post-author-name">By Jajaaja</h4>
                         <time class="post-author-time">Just now</time>
@@ -420,8 +421,8 @@
             </div>
             <div class="post-item">
                 <a href="#" class="post-media">
-                    <img
-                    src="https://images.unsplash.com/photo-1621390324893-ea412aa9453c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="" class="post-image"/>
+                    <img src="https://giabaogroup.vn/wp-content/uploads/2020/05/thiet-ke-nha-biet-thu-pho-dep-2.1.jpg"
+                        alt="" class="post-image" />
                 </a><a href="#" class="post-category">Shop</a>
                 <h3>
                     <a href="#" class="post-title">How to choose best bike for spring in Australia</a>
@@ -431,7 +432,7 @@
                 </p>
                 <a href="#" class="post-author">
                     <img src="https://images.unsplash.com/photo-1621423938441-5a7346cb2213?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
-                     alt="" class="post-author-image">
+                        alt="" class="post-author-image">
                     <div class="post-author-info">
                         <h4 class="post-author-name">By Jajaaja</h4>
                         <time class="post-author-time">Just now</time>
@@ -443,64 +444,64 @@
             <a href="javascript:void(0)">Xem Thêm</a>
         </div>
     </div>
-        <!-- contact -->
-        <div class="box-contact">
-            <h1>Liên Hệ Và Nhận Xét</h1>
-            <div class="contact-content grid-container">
-                <iframe class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15342.933148791337!2d108.25145036484606!3d15.97529878218279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1620109399065!5m2!1svi!2s"
-                    width="40%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <div class="contact-form">
-                    <label for="name">
-                        <h2>Tên</h2>
-                    </label>
-                    <input type="text" placeholder="Nhập tên">
-                    <label for="email">
-                        <h2>Email</h2>
-                    </label>
-                    <input type="text" placeholder="Nhập email">
-                    <label for="name">
-                        <h2>Nội Dung Nhận Xét</h2>
-                    </label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Viết nhận xét"></textarea>
-                    <button>Gửi</button>
-                </div>
+    <!-- contact -->
+    <div class="box-contact">
+        <h1>Liên Hệ Và Nhận Xét</h1>
+        <div class="contact-content grid-container">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15342.933148791337!2d108.25145036484606!3d15.97529878218279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1620109399065!5m2!1svi!2s"
+                width="40%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-form">
+                <label for="name">
+                    <h2>Tên</h2>
+                </label>
+                <input type="text" placeholder="Nhập tên">
+                <label for="email">
+                    <h2>Email</h2>
+                </label>
+                <input type="text" placeholder="Nhập email">
+                <label for="name">
+                    <h2>Nội Dung Nhận Xét</h2>
+                </label>
+                <textarea name="" id="" cols="30" rows="9" placeholder="Viết nhận xét"></textarea>
+                <button>Gửi</button>
             </div>
         </div>
-        <!-- Footer -->
-        <div class="footer ">
-            <div class="footer-info">
-                <h2 style="display: inline-block">BRAND</h2>
-                <p>Quote</p>
-            </div>
-            <div class="about">
-                <h2>Liên Kết Nhanh</h2>
-                <ul class="">
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Thuê trọ</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Danh sách</a></li>
-                    <li><a href="#">Đăng tin</a></li>
-                </ul>
-            </div>
-            <div class="support">
-                <h2>Hỗ trợ khách hàng</h2>
-                <ul class="">
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
-                    <li><a href="#">Hướng dẫn đăng tin</a></li>
-                    <li><a href="#">Quy định đăng tin</a></li>
-                    <li><a href="#">Quy định sử dụng</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <h2>Liên hệ với chúng tôi</h2>
-                <ul class=" flex">
-                    <li><a href="# "><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer ">
+        <div class="footer-info">
+            <h2 style="display: inline-block">BRAND</h2>
+            <p>Quote</p>
         </div>
+        <div class="about">
+            <h2>Liên Kết Nhanh</h2>
+            <ul class="">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thuê trọ</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Danh sách</a></li>
+                <li><a href="#">Đăng tin</a></li>
+            </ul>
+        </div>
+        <div class="support">
+            <h2>Hỗ trợ khách hàng</h2>
+            <ul class="">
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Hướng dẫn đăng tin</a></li>
+                <li><a href="#">Quy định đăng tin</a></li>
+                <li><a href="#">Quy định sử dụng</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2>Liên hệ với chúng tôi</h2>
+            <ul class=" flex">
+                <li><a href="# "><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
     </div>
     </div>
     <!-- Script -->

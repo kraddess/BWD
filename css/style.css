@@ -43,6 +43,8 @@ table {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(3,1fr); 
+  grid-gap: .5em;
+  margin: 1em;
 }
 ::-webkit-scrollbar {
   width: 5px; 
@@ -540,7 +542,6 @@ button.owl-next,button.owl-prev{
     var(--primary)
   );
   justify-content: space-between;
-  margin: .5em .5em;
 }
 .list-card p{
   width: 70%;

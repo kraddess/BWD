@@ -68,7 +68,7 @@
 
 .img-holder .bg {
     opacity: 1;
-    background-image: url(/img/login.jpg);
+    background-image: url(../img/login.jpg);
 }
 
 .form-holder {

@@ -55,5 +55,3 @@ $('.owl-carousel').owlCarousel({
         
     });
 });
-
-//  
